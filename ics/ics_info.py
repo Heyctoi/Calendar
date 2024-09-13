@@ -129,5 +129,5 @@ driver.quit()
 print("end")
 
 output += "END:VCALENDAR"
-with open('events/events_info.ics', 'w') as my_file:
+with open('events.ics', 'w') as my_file:
     my_file.writelines(output)
