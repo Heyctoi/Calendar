@@ -82,7 +82,7 @@ def get_information(driver, course_id, start=-1, end=-1):
         for cursus in list_cursus:
             info  = cursus.find_elements(By.XPATH,'./td')
 
-            date  = info[0].find_element(By.XPATH,'./ul/li').get_attribute("innerHTML").replace("&nbsp;", " ")
+            date  = info[0].find_element(By.XPATH,'./div').get_attribute("innerHTML").replace("&nbsp;", " ")
             _time = info[1].get_attribute("innerHTML").replace("&nbsp;", " ")
             start = dateparser.parse(date + ' ' + _time[3:8]).strftime("%Y-%m-%dT%H:%M:%S")
             end   = dateparser.parse(date + ' ' + _time[10:17]).strftime("%Y-%m-%dT%H:%M:%S")
@@ -117,11 +117,11 @@ move_to_combo(driver, '//div[@class="ocb_cont as-input as-search"]')
 time.sleep(WAITING_TIME)
 move_to_course(driver, "B2-Bac en informatique , or dev d'applications (Charleroi)")
 time.sleep(WAITING_TIME)
-move_to_combo(driver, '//div[@class="ocb_cont as-input as-select "]')
+move_to_combo(driver, '//div[@id="GInterface.Instances[1].Instances[2].bouton_Edit"]')
 time.sleep(WAITING_TIME)
 move_down(driver,2)
 time.sleep(WAITING_TIME)
-move_to_combo(driver, '//i[@class="icon_afficher_cours_TD_plus_promo bt-activable btnImage OmbreFocus"]')
+move_to_combo(driver, '//i[@class="icon_afficher_cours_TD_plus_promo bt-activable btnImage"]')
 time.sleep(WAITING_TIME)
 get_information(driver, "INFO") #Groupe B
 time.sleep(WAITING_TIME)
