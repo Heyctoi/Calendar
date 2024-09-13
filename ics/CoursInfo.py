@@ -1,12 +1,12 @@
 course_info = {
-    "Algorithmique 2": "Algorithmique 2",
-    "Anglais 2": "Anglais 2",
-    "Applications web 2": "Applications web 2",
-    "Arch. Tech. Mat. infor. 2": "Architecture 2",
-    "Comptabilité 1": "Comptabilite 1",
-    "Économie générale et appliquée": "Economie generale",
-    "Math. 2 et statistiques": "Mathematiques 2",
-    "Programmation procédurale 2": "Programmation procedurale 2",
-    "Algor. & prog. procédurale II": "Algor. & prog. procédurale II",
-    "SGBD 2": "SGBD 2"
+    "Analyse et conduite projets 1": "Analyse 1",
+    "Applications informatiques 1": "Applications informatiques 1",
+    "Comptabilité 2": "Comptabilité 2",
+    "English 3": "Anglais 3",
+    "OGE": "OGE",
+    "Probabilité et inférence stat.": "Proba. et stat.",
+    "Programmation objet 1": "Programmation objet 1",
+    "Réseaux & sécurité 1": "Réseaux & sécurité 1",
+    "SGBD 3": "SGBD 3",
+    "Technologies Internet 1": "Technologies Internet 1"
 }

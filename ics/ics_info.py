@@ -14,7 +14,7 @@ import time
 from CoursInfo import course_info
 
 
-URL = "https://horaires2023.condorcet.be/invite"
+URL = "https://horaires2024.condorcet.be/invite"
 
 course_dict = {"INFO": course_info}
 
@@ -115,11 +115,11 @@ time.sleep(WAITING_TIME) # wait for the page to load
 move_to_start_position(driver)
 move_to_combo(driver, '//div[@class="ocb_cont as-input as-search"]')
 time.sleep(WAITING_TIME)
-move_to_course(driver, "B1-Bac en informatique , or dev d'applications (Charleroi)")
+move_to_course(driver, "B2-Bac en informatique , or dev d'applications (Charleroi)")
 time.sleep(WAITING_TIME)
 move_to_combo(driver, '//div[@class="ocb_cont as-input as-select "]')
 time.sleep(WAITING_TIME)
-move_down(driver,9)
+move_down(driver,2)
 time.sleep(WAITING_TIME)
 move_to_combo(driver, '//i[@class="icon_afficher_cours_TD_plus_promo bt-activable btnImage OmbreFocus"]')
 time.sleep(WAITING_TIME)
