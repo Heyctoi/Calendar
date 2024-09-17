@@ -119,7 +119,7 @@ move_to_course(driver, "B2-Bac en informatique , or dev d'applications (Charlero
 time.sleep(WAITING_TIME)
 move_to_combo(driver, '//div[@id="GInterface.Instances[1].Instances[2].bouton_Edit"]')
 time.sleep(WAITING_TIME)
-move_down(driver,2)
+move_down(driver,3)
 time.sleep(WAITING_TIME)
 move_to_combo(driver, '//i[@class="icon_afficher_cours_TD_plus_promo bt-activable btnImage"]')
 time.sleep(WAITING_TIME)
